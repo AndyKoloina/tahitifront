@@ -1,0 +1,12 @@
+mixin select(options)
+  - var options = options || {}
+  - var class_input = options.class_input || ''
+  - var id_input = options.id_input || ''
+  - var item_options = options.item_options || []
+  .select-button-group
+    button.btn.btn-info.btn-form 
+      img.icone-arrow-down(src='../img/icons/arrow-down.svg',alt='arrow-bottom')
+    select(class=`${class_input}` id=`${id_input}`)
+      each option in item_options
+        option(class=`${option.class_option}` value=`${option.value_option}`) #{option.value_option}
+    

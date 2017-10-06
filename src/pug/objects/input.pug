@@ -1,0 +1,14 @@
+mixin input(options)
+  - var options = options || {}
+  - var name = options.name || ''
+  - var placeholder = options.placeholder || ''
+  - var id_input = options.id_input || ''
+  - var rows = options.rows || ''
+  - var class_input = options.class_input || ''
+  - var aria_describedby = options.aria_describedby || ''
+  - var input_type = options.input_type || 'text' 
+
+  if input_type !== 'textarea'
+    input(class=`${class_input}` type=`${input_type}` id=`${id_input}` placeholder=`${placeholder}` name=`${name}` )
+  else 
+    textarea(class=`${class_input}` id=`${id_input}` rows=`${rows}` placeholder=`${placeholder}`)

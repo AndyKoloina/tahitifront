@@ -1,0 +1,37 @@
+extends layout/base
+include components/articlefb
+include components/map
+include components/contact
+
+block page-title
+  title Tahiti phone
+block vars
+  - var bodyClasses = 'home';
+block page-content
+  main.main-content
+      #les_offres.row.section-wrapper.offre-moment(style='height:1037px;background-color:red')
+      .row.section-wrapper.article-fb  
+        .col-12
+          .container
+            .row
+              .col-6.color-white
+                .article-content-left        
+                  h1.heading.heading-bordered.heading-bordered-30.heading-bordered-white la Ora Na !
+                  p
+                    span.subHeading  Revendeur de téléphonie mobile a Tahiti et ses iles
+                  p
+                    span.article-desc At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditii iusto odio dignissimos ducimus qui blanditiis sentium voluptatum deleniti atque corrupti.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
+              .col-6
+                .article-content-right
+                  h1.heading.heading-bordered.heading-bordered-30.heading-bordered-bluenavy Facebook News
+                  +articlefb
+      .row.section-wrapper.map
+        +map
+      .row.section-wrapper.contact
+        .col-12
+          .container
+            +contact
+           
+        
+        
+

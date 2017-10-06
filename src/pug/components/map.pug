@@ -1,0 +1,39 @@
+include nav-tab
+include nav-tab-content
+mixin map 
+  .map-content.col-12
+    .map-header.container
+      .row
+        .col-12
+          h1.heading.heading-bordered.heading-bordered-30.heading-bordered-white.color-white Nous trouver
+      .row
+        .col-10
+          span.subHeading  Vous souhaitez avoir plus d’informations sur nos produits, services et accessoires ?
+    .map-carte
+      +nav-tab({
+        items : [
+          {
+            class: 'nav-link active',
+            href: 'Tahiti',
+            name: 'Tahiti'      
+         },
+         {
+            class: 'nav-link',
+            href: 'Moorea',
+            name: 'Moorea'
+         },
+         {
+            class: 'nav-link',
+            href: 'BoraBora',
+            name: 'Bora Bora'
+         },
+         {
+            class: 'nav-link',
+            href: 'Raiatea',
+            name: 'Raiatea'
+         }
+
+        ]
+      })
+      +nav-tab-content
+      

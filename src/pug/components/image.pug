@@ -1,0 +1,6 @@
+mixin img(options)
+  - var options = options || {};
+  - var src = options.src || '';
+  - var alt = options.alt || '';
+
+  img(src=src,alt=alt)&attributes(attributes)

@@ -1,0 +1,22 @@
+include nav-tab
+include nav-tab-content
+
+mixin nav-group(options)
+  - var options = options || {}
+  - var items = options.items || []
+
+  each item in items
+    +nav-tab({
+      items : [{
+        class: item.class,
+        href: item.href,
+        name: item.name
+      }]
+    })
+
+    +nav-tab-content({
+      items : [{
+        class: item.classContent,
+        href: item.href
+      }]
+    })

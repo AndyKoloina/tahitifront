@@ -1,0 +1,19 @@
+include content-tab
+mixin nav-tab-content
+  .tab-content
+    div(role='tabpanel',class='tab-pane  active',id='Tahiti')
+      +content-tab({
+        type: 'tahiti'
+      })
+    div(role='tabpanel',class='tab-pane fade',id='Moorea')
+      +content-tab({
+        type: 'moorea'
+      })
+    div(role='tabpanel',class='tab-pane fade',id='BoraBora')
+      +content-tab({
+        type: 'borabora'
+      })
+    div(role='tabpanel',class='tab-pane fade',id='Raiatea')
+      +content-tab({
+        type: 'raiatea'
+      })

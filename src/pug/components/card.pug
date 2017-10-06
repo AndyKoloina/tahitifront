@@ -1,0 +1,13 @@
+mixin card(options)
+  - var options = options || {}
+  - var items = options.items || []
+  each item in items
+    a.card-link-tahiti(href=`${item.href}`)
+      .card-tahiti
+        .card-image-content.d-flex.flex-row
+          .card-image
+            img.img-card(src=`${item.srcimg}`,alt=`${item.alt}`,width='130px' height='130px')
+          .card-content.d-flex.flex-column.justify-content-between
+            span.card-title #{item.title}
+            p #{item.desc}
+            span #{item.date}

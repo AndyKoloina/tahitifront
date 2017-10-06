@@ -1,0 +1,41 @@
+.card-tahiti {
+  padding: 23px;
+  border-top: 8px solid $c-bluenavy;
+  background-color: $c-white;
+  margin-bottom: 25px;
+}
+
+.img-card {
+  object-fit: cover;
+  height: 145px;
+  width: 400px;
+}
+
+.card-content {
+  padding-left: 40px;
+}
+
+.card-title {
+  color: $c-bluebold;
+}
+
+a.card-link-tahiti {
+  cursor: pointer;
+}
+
+.card-map-contact {
+  text-align: center;
+}
+
+.card-place , .card-contact {
+  padding-top: 50px;
+  padding-bottom: 85px;
+}
+
+.card-place {
+  background-color: $c-bluenavy;
+}
+
+.card-contact {
+  background-color: $c-white;
+}

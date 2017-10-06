@@ -1,0 +1,55 @@
+.contact {
+  margin-bottom: 100px;
+}
+
+.contact-form input.form-control {
+  height: 65px;
+}
+
+.contact-form textarea.form-control,
+.contact-form input.form-control,
+.contact-form select.form-control {
+  margin-bottom: 25px; 
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 0;
+  font-size: 20px;
+}
+
+.contact-form select.form-control {
+  height: 65px !important;
+}
+
+.contact-form select.form-control::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  background-color: $c-bluenavy;
+  z-index: 15;
+}
+
+.select-button-group {
+  position: relative;
+}
+
+.icone-arrow-down {
+  width: 20px;
+}
+
+.info-check {
+  margin-right: 10px;
+}
+
+.info-message {
+  font-size: 20px;
+}
+
+.info-message-content {
+  margin-bottom: 10px;
+}
+
+.g-recaptcha {
+  margin-right: 15px;
+}

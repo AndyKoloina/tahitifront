@@ -1,0 +1,25 @@
+.heading {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.heading-bordered {
+  @include style-bordered(absolute);
+}
+
+.heading-bordered-30 {
+  @include style-bordered-size(30px);
+}
+
+.heading-bordered-bluenavy {
+  @include style-bordered-color('c-bluenavy');
+}
+
+.heading-bordered-white {
+  @include style-bordered-color('c-white');
+}
+
+.subHeading {
+  font-size: 50px;
+  color: #4d4d4d;
+}

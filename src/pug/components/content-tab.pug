@@ -1,0 +1,14 @@
+include card-map-contact
+include card-map-image
+
+mixin content-tab(options)
+  - var options = options || {}
+  - var type = options.type || 'tahiti' 
+  .row
+    .col-4
+      +card-map-contact
+    .col-8.d-flex.align-items-center.justify-content-center
+      +card-map-image({
+        type: type
+      })
+  

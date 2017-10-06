@@ -1,0 +1,27 @@
+.footer {
+  @include border-bluenavy-top;
+  &__content {
+     padding: 28px 0 28px 0;
+  }
+}
+
+.block-footer-right , .block-footer-left {
+  height: 200px;
+}
+
+.block-phone {
+  margin-bottom: 40px;
+}
+
+.icone-fb {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 1px solid $c-white;
+  border-radius: 3px;
+}
+
+.icone-phone {
+  width: 30px;
+  height: 25px;
+}

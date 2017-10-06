@@ -1,0 +1,11 @@
+mixin nav-tab(options)
+  - var options = options || {}
+  - var items = options.items || []
+
+  ul.nav.nav-tabs(role='tablist')
+    each item in items
+      li.nav-item
+        a(class=`${item.class}`,href=`#${item.href}`,role='tab',data-toggle='tab') 
+          span #{item.name}
+  
+  

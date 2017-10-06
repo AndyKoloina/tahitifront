@@ -1,0 +1,41 @@
+/* Vendors */
+@import "~normalize.css";
+
+/* Sprites */
+@import "./sprites/main";
+
+/* Setup */
+@import "./settings/main";
+
+
+/* Mixins */
+@import "./utilities/mixins";
+
+/* Base styles */
+@import "./base/elements";
+@import "./base/backgroundColor";
+@import "./base/color";
+@import "./base/heading";
+
+/* Layout */
+@import "./layout/main";
+
+/* Objects */
+@import "./objects/typography";
+@import "./objects/buttons";
+@import "./objects/header";
+@import "./objects/footer";
+@import "./objects/nav";
+@import "./objects/input";
+
+/* Components */
+@import "./components/intro";
+@import "./components/map";
+@import "./components/modal";
+@import "./components/product";
+@import "./components/article";
+@import "./components/card";
+@import "./components/contact";
+
+/* BOOTSTRAP */
+@import "~bootstrap/scss/bootstrap.scss";

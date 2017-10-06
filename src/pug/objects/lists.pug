@@ -1,0 +1,6 @@
+include link.pug
+mixin listNav(classtype,...items)
+  ul(class= classtype)
+    each item in items
+      li.nav-item 
+        +link(`#${item.replace(' ','_')}`, item)(class="nav-link text-uppercase ")

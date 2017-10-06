@@ -1,0 +1,6 @@
+include lists.pug
+mixin nav(options)
+  - var options = options || {}
+  - var classtype = options.classtype || ''
+
+  +listNav(`${classtype}`,'les offres','actualites', 'nous trouver','contact')

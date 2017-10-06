@@ -1,0 +1,19 @@
+include nav.pug
+include ../components/slider.pug
+include ../components/card.pug
+header
+  .row.bg-bluebold.header
+    .col-5.d-flex.justify-content-center
+      img(src='../img/logos.png' alt='logos')
+    .col-7
+      +nav({classtype:'nav justify-content-center'})
+  .row
+    .carousel.slide#carouselExampleSlidesOnly(data-ride='carousel')
+      .carousel-inner(role='listbox')
+        .carousel-item(active)
+          img(class='d-block img-fluid' src='../img/banner/fondbanner1.jpg' alt='First slide')
+        .carousel-item
+          img(class='d-block img-fluid' src='../img/banner/fondbanner2.jpg' alt='second slide')
+  
+    
+    

@@ -1,0 +1,27 @@
+.article-fb {
+  position: relative;
+  margin-bottom: 100px;
+  background-color: $c-lighgrey;
+}
+
+.article-fb::before {
+  content: '';
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  background-color: $c-bluenavy;
+}
+
+.article-content-left {
+ padding: 110px 65px 100px 0;
+ z-index: 2;
+}
+
+.article-content-right {
+  padding: 110px 0 100px 65px;
+  z-index: 2;
+}
+
+.article-desc {
+  font-size: 20px;
+}

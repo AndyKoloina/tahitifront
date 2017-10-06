@@ -1,0 +1,19 @@
+include image.pug
+
+mixin sliderCarousel(data)
+  - var data = data || {};
+  - var type = data.type || 'image';
+  - var place = data.place || 'header';
+  - var items = data.items || [];
+  - var slickOptions = data.slickOptions || {};
+  - var count = 0;
+  if place === 'header'
+    .slick-type-image(data-slick,data-slick-options != slickOptions,style='display:block; width: 100%;')
+      each item in items    
+        .div(class=`slider-${count}`)
+          +img({
+            src: item.src,
+            alt: item.alt
+          })
+      
+    
