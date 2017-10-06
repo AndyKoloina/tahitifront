@@ -16,7 +16,7 @@ $(document).on('click.scroll-to', trigger, function() {
 
     if (target.length) {
       target.velocity('scroll', {
-        duration: 500,
+        duration: 1000,
         offset: - headerHeight,
         mobileHA: false,
         complete: function(){
