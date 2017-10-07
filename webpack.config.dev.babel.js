@@ -190,7 +190,6 @@ module.exports = env => {
         jQuery: 'jquery',
         'window.jQuery': 'jquery',
         Tether: 'tether',
-        Velocity: 'velocity',
         Util: 'exports-loader?Util!bootstrap/js/dist/util',
         Carousel: 'exports-loader?Carousel!bootstrap/js/dist/carousel',
       }),

@@ -1,0 +1,13 @@
+mixin product(options)
+  - var options = options || {};
+  - var items = options.items || [];
+  each item in items
+    .tahiti-product.d-flex.align-items-center.flex-column.justify-content-between
+      .product-title
+        strong #{item.name}
+        span Idol 25
+      .product-image
+        img.img-product-size(src=`${item.src}` alt =`${item.alt}`)
+      .product-price
+        strong #{item.price}
+        span TTC

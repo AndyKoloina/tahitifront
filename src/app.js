@@ -13,9 +13,9 @@ import velocity from 'velocity-animate';
 
 /* Scripts */
 import './js/main';
-import './js/slick';
-import './js/smooth-scroll';
-import './js/hamburger';
-import './js/hamburger-sidebar';
+//import './js/slick';
+//import './js/smooth-scroll';
+//import './js/hamburger';
+//import './js/hamburger-sidebar';
 
 

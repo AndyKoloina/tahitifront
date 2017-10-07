@@ -2,14 +2,41 @@ extends layout/base
 include components/articlefb
 include components/map
 include components/contact
-
+include components/product
 block page-title
   title Tahiti phone
 block vars
   - var bodyClasses = 'home';
 block page-content
   main.main-content
-      #les_offres.row.section-wrapper.offre-moment(style='height:1037px;background-color:red')
+      #les_offres.row.section-wrapper.offre-moment
+        .col-12
+          .container
+            h1.heading.heading-bordered.heading-bordered-30.heading-bordered-bluenavy les offres du moments
+            .products-list.d-flex.justify-content-between
+              +product({
+                items : [
+                  {
+                    name: 'Alcatel',
+                    src: '../img/product/product1.png',
+                    alt: 'alcatel',
+                    price: '00 000'
+                  },
+                  {
+                    name: 'Alcatel',
+                    src: '../img/product/product4.png',
+                    alt: 'alcatel',
+                    price: '00 000'
+                  },
+                  {
+                    name: 'Alcatel',
+                    src: '../img/product/product3.png',
+                    alt: 'alcatel',
+                    price: '00 000'
+                  }
+                  
+                ]
+              })
       #actualites.row.section-wrapper.article-fb
         .col-12
           .container
