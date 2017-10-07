@@ -4,7 +4,7 @@
 
 'use strict';
 
-var trigger = '[data-scroll-to]',
+let trigger = '[data-scroll-to]',
     headerHeight = $('.header').height();
 
 $(document).on('click.scroll-to', trigger, function() {

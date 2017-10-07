@@ -1,11 +1,18 @@
 include nav.pug
 include ../components/slider.pug
 include ../components/card.pug
+include link
 header
   #nav-icon1
     span
     span
     span
+  nav#cbp-spmenu-s2.cbp-spmenu.cbp-spmenu-vertical.cbp-spmenu-right.d-flex.flex-column.justify-content-center
+    +link('#', 'acceuil')(class='is-active text-uppercase')
+    +link('#', 'tahiti phone')(class='text-uppercase')
+    +link('#', 'nos produits')(class='text-uppercase')
+    +link('#', 'nos boutiques')(class='text-uppercase')
+    +link('#', 'conatctez-nous')(class='text-uppercase')
   .row.bg-bluebold.header
     .col-5.d-flex.justify-content-center
       img(src='../img/logos.png' alt='logos')

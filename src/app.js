@@ -10,10 +10,12 @@ import './scss/main.scss';
 //import bootstrap from 'bootstrap';
 
 import velocity from 'velocity-animate';
+
 /* Scripts */
 import './js/main';
 import './js/slick';
 import './js/smooth-scroll';
 import './js/hamburger';
+import './js/hamburger-sidebar';
 
 
