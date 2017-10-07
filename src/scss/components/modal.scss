@@ -1,6 +1,30 @@
 .modal-image {
-  margin-right: 15px;
+  margin-right: 20px;
   width: 100%;
   //height: 75px;
 }
 
+.title-product-strong {
+  font-size: 20px;
+}
+
+a.link-product:hover {
+  text-decoration: none;
+  color: $c-yellow;
+}
+
+.price-product {
+  color: $c-red;
+  border-bottom: 4px solid $c-yellow;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-product-content {
+  padding: 40px;
+}
+
+.modal-content-tahiti {
+  border-radius: 0!important;
+  border: 4px solid $c-bluenavy!important;
+}

@@ -755,8 +755,28 @@ label.css-label {
   fill: #103d6f !important; }
 
 .modal-image {
-  margin-right: 15px;
+  margin-right: 20px;
   width: 100%; }
+
+.title-product-strong {
+  font-size: 20px; }
+
+a.link-product:hover {
+  text-decoration: none;
+  color: #ffed00; }
+
+.price-product {
+  color: #e30513;
+  border-bottom: 4px solid #ffed00;
+  font-size: 20px;
+  margin-bottom: 20px; }
+
+.modal-product-content {
+  padding: 40px; }
+
+.modal-content-tahiti {
+  border-radius: 0 !important;
+  border: 4px solid #52b8e9 !important; }
 
 .img-product-size {
   height: 325px;
@@ -1091,9 +1111,6 @@ a.card-link-tahiti:hover {
   display: none; }
 
 /* Slider */
-.slick-loading .slick-list {
-  background: #fff url("/img/ajax-loader.gif") center center no-repeat; }
-
 /* Icons */
 @font-face {
   font-family: 'slick';
