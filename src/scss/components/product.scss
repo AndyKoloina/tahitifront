@@ -20,10 +20,15 @@
   font-size: 50px;
   color: $c-bluenavy;
 }
+
 .product-title,
 .product-price {
   font-size: 28px;
  
+}
+
+a.product-link:hover {
+  text-decoration: none;
 }
 
 .product-title {

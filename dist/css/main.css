@@ -621,9 +621,6 @@ a.nav-link:hover {
 .img-banner {
   object-fit: cover; }
 
-.offre-moment .slick-next, .offre-moment .slick-prev {
-  display: none !important; }
-
 .slick-item {
   position: relative; }
 
@@ -757,6 +754,10 @@ label.css-label {
 #borabora-carte-middle {
   fill: #103d6f !important; }
 
+.modal-image {
+  margin-right: 15px;
+  width: 100%; }
+
 .img-product-size {
   height: 325px;
   object-fit: cover; }
@@ -778,6 +779,9 @@ label.css-label {
 .product-title,
 .product-price {
   font-size: 28px; }
+
+a.product-link:hover {
+  text-decoration: none; }
 
 .product-title {
   color: #225690;

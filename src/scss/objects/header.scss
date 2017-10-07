@@ -15,9 +15,7 @@ a.nav-link:hover {
   object-fit: cover;
 }
 
-.offre-moment .slick-next , .offre-moment .slick-prev {
-   display: none!important;
-}
+
 
 .slick-item {
   position: relative;
@@ -29,6 +27,7 @@ a.nav-link:hover {
   top: 300px;
   left: 150px;
   color: #fff;
+
   > h1 {
     font-size: 75px;
   }
