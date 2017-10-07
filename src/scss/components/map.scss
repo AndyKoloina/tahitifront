@@ -1,25 +1,25 @@
 .map-content {
-  padding: 130px 0 100px 0;
+  padding: 75px 0;
   z-index: 2;
 }
 
 .map-carte {
   padding-left: 60px;
   padding-right: 60px;
-  margin-top: 145px;
+  margin-top: 90px;
 }
 
 .map {
   position: relative;
   background-color: $c-bluebold;
-  margin-bottom: 100px;
+  margin-bottom: 75px;
 }
 
 .map:before {
   content: '';
   position: absolute;
   width: 100%;
-  height: 575px;
+  height: 445px;
   background-color: $c-bluenavy;
   z-index: 2;
 }

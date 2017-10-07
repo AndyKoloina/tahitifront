@@ -23,6 +23,14 @@ a.card-link-tahiti {
   cursor: pointer;
 }
 
+a.card-link-tahiti:hover {
+  text-decoration: none;
+    .card-tahiti {
+      box-shadow: 5px 5px 3px #888888;
+    }
+  
+}
+
 .card-map-contact {
   text-align: center;
 }

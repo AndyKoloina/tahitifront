@@ -1,14 +1,25 @@
 .img-product-size {
-  height: 480px;
+  height: 400px;
   object-fit: cover;
 }
 
 .offre-moment {
-  margin-bottom: 100px;
+  margin-bottom: 75px;
 }
 
 .product-title,
 .product-price {
-  font-size: 33px;
-  line-height: 2;
+  font-size: 28px;
+ 
+}
+
+.product-title {
+  color: $c-bluebold;
+  line-height: 1.8;
+}
+
+.product-price {
+  color: $c-red;
+  border-bottom: 6px solid $c-yellow;
+  margin-top: 30px;
 }
