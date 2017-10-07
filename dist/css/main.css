@@ -624,6 +624,18 @@ a.nav-link:hover {
 .offre-moment .slick-next, .offre-moment .slick-prev {
   display: none !important; }
 
+.slick-item {
+  position: relative; }
+
+.banner-description {
+  position: absolute;
+  z-index: 10;
+  top: 300px;
+  left: 150px;
+  color: #fff; }
+  .banner-description > h1 {
+    font-size: 75px; }
+
 .footer {
   border-top: 4px solid #52b8e9; }
   .footer__content {

@@ -19,4 +19,17 @@ a.nav-link:hover {
    display: none!important;
 }
 
+.slick-item {
+  position: relative;
+}
 
+.banner-description {
+  position: absolute;
+  z-index: 10;
+  top: 300px;
+  left: 150px;
+  color: #fff;
+  > h1 {
+    font-size: 75px;
+  }
+}
