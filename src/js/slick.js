@@ -29,7 +29,7 @@ let defaults = {
   edgeFriction: 0,
   infinite: false,
   dots: true,
-  speed: 500,
+  speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
   prevArrow: '<button type="button" class="slick-prev slick-arrow-white"><span class="icon icon-fleche"></span></button>',

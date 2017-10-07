@@ -618,6 +618,12 @@ a.nav-link:hover {
   padding: 43px 0 21px 0;
   border-top: 4px solid #52b8e9; }
 
+.img-banner {
+  object-fit: cover; }
+
+.offre-moment .slick-next, .offre-moment .slick-prev {
+  display: none !important; }
+
 .footer {
   border-top: 4px solid #52b8e9; }
   .footer__content {

@@ -10,3 +10,13 @@ a.nav-link:hover {
   padding: 43px 0 21px 0;
   @include border-bluenavy-top;
 }
+
+.img-banner {
+  object-fit: cover;
+}
+
+.offre-moment .slick-next , .offre-moment .slick-prev {
+   display: none!important;
+}
+
+
