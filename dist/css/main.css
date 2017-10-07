@@ -786,7 +786,7 @@ a.card-link-tahiti {
 a.card-link-tahiti:hover {
   text-decoration: none; }
   a.card-link-tahiti:hover .card-tahiti {
-    box-shadow: 5px 5px 3px #888888; }
+    box-shadow: 0 10px 6px -6px #777; }
 
 .card-map-contact {
   text-align: center; }
