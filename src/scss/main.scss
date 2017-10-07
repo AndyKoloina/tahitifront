@@ -7,7 +7,6 @@
 /* Setup */
 @import "./settings/main";
 
-
 /* Mixins */
 @import "./utilities/mixins";
 
@@ -29,7 +28,6 @@
 @import "./objects/input";
 
 /* Components */
-@import "./components/intro";
 @import "./components/map";
 @import "./components/modal";
 @import "./components/product";
@@ -37,7 +35,8 @@
 @import "./components/card";
 @import "./components/contact";
 @import "./components/hamburger";
-@import "./components/carousel";
+@import "./components/slick";
+@import "./components/slick-theme";
 
 /* BOOTSTRAP */
 @import "~bootstrap/scss/bootstrap.scss";

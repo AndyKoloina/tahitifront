@@ -1,5 +1,5 @@
 .img-product-size {
-  height: 400px;
+  height: 325px;
   object-fit: cover;
 }
 
@@ -7,6 +7,19 @@
   margin-bottom: 75px;
 }
 
+.offre-moment .slick-next {
+  right: 0!important;
+  margin-top: 60px;
+}
+
+.offre-moment .slick-prev {
+  margin-top: 60px;
+}
+
+.offre-moment .slick-prev::before , .offre-moment .slick-next::before {
+  font-size: 50px;
+  color: $c-bluenavy;
+}
 .product-title,
 .product-price {
   font-size: 28px;
@@ -15,7 +28,7 @@
 
 .product-title {
   color: $c-bluebold;
-  line-height: 1.8;
+  margin-bottom: 30px;
 }
 
 .product-price {
