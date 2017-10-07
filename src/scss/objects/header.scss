@@ -33,3 +33,25 @@ a.nav-link:hover {
     font-size: 75px;
   }
 }
+
+.banner-price {
+  font-size: 50px;
+  position: relative;
+}
+
+.banner-price span {
+  position: relative;
+}
+
+.banner-price span::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  bottom: -20px;
+  background-color: $c-yellow;
+}
+
+.banner-desc {
+  font-size: 30px;
+}
