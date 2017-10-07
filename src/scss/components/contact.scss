@@ -3,7 +3,7 @@
 }
 
 .contact-form input.form-control {
-  height: 65px;
+  height: 45px;
 }
 
 .contact-form textarea.form-control,
@@ -13,18 +13,18 @@
   background-color: #f3f3f3;
   border: none;
   border-radius: 0;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .contact-form select.form-control {
-  height: 65px !important;
+  height: 45px !important;
 }
 
 .contact-form select.form-control::before {
   content: '';
   position: absolute;
   right: 0;
-  width: 40px;
+  width: 15px;
   height: 100%;
   background-color: $c-bluenavy;
   z-index: 15;
@@ -35,7 +35,7 @@
 }
 
 .icone-arrow-down {
-  width: 20px;
+  width: 15px;
 }
 
 .info-check {
@@ -52,6 +52,7 @@
 
 .g-recaptcha {
   margin-right: 15px;
+  display: inline-block;
 }
 
 .champ-obligatoire {
