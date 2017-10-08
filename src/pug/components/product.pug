@@ -2,8 +2,8 @@ mixin product(options)
   - var options = options || {};
   - var items = options.items || [];
   each item in items
-    a.product-link(href='#')(data-toggle='modal' data-target='#exampleModal')
-      .tahiti-product.d-flex.align-items-center.flex-column.justify-content-between
+    .tahiti-product.d-flex.align-items-center.flex-column.justify-content-between
+      a.product-link(href='#')(data-toggle='modal' data-target='#exampleModal')
         .product-title
           strong #{item.name}
           span Idol 25

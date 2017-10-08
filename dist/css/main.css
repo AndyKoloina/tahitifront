@@ -619,15 +619,18 @@ a.nav-link:hover {
   border-top: 4px solid #52b8e9; }
 
 .img-banner {
-  object-fit: cover; }
+  object-fit: cover;
+  width: 100%;
+  height: 650px; }
 
 .slick-item {
-  position: relative; }
+  position: relative;
+  height: 650px; }
 
 .banner-description {
   position: absolute;
   z-index: 10;
-  top: 300px;
+  top: 200px;
   left: 150px;
   color: #fff; }
   .banner-description > h1 {
@@ -716,7 +719,7 @@ label.css-label {
 .map {
   position: relative;
   background-color: #225690;
-  margin-bottom: 75px; }
+  margin-bottom: 40px; }
 
 .map:before {
   content: '';
@@ -783,7 +786,7 @@ a.link-product:hover {
   object-fit: cover; }
 
 .offre-moment {
-  margin-bottom: 75px; }
+  margin-bottom: 40px; }
 
 .offre-moment .slick-next {
   right: 0 !important;
@@ -814,7 +817,7 @@ a.product-link:hover {
 
 .article-fb {
   position: relative;
-  margin-bottom: 75px;
+  margin-bottom: 40px;
   background-color: #f3f3f3; }
 
 .article-fb::before {
@@ -874,7 +877,7 @@ a.card-link-tahiti:hover {
   background-color: #fff; }
 
 .contact {
-  margin-bottom: 75px; }
+  margin-bottom: 40px; }
 
 .contact-form input.form-control {
   height: 45px; }
