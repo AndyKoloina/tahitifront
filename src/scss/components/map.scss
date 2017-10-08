@@ -56,3 +56,16 @@
 #borabora-carte-middle {
   fill: #103d6f!important;
 }
+
+#Facebook_Places:hover,
+#nunue:hover,
+#paopao:hover,
+#carrefour:hover,
+#Prince-hinoi:hover,
+#uturoa:hover {
+  cursor: pointer;
+}
+
+.is-active-marker {
+  fill: #52b8e9;
+}

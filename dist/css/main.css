@@ -757,6 +757,17 @@ label.css-label {
 #borabora-carte-middle {
   fill: #103d6f !important; }
 
+#Facebook_Places:hover,
+#nunue:hover,
+#paopao:hover,
+#carrefour:hover,
+#Prince-hinoi:hover,
+#uturoa:hover {
+  cursor: pointer; }
+
+.is-active-marker {
+  fill: #52b8e9; }
+
 .modal-image {
   margin-right: 20px;
   width: 100%; }
@@ -813,7 +824,8 @@ a.product-link:hover {
 .product-price {
   color: #e30513;
   border-bottom: 6px solid #ffed00;
-  margin-top: 30px; }
+  margin-top: 30px;
+  text-align: center; }
 
 .article-fb {
   position: relative;

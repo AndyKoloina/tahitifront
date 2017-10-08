@@ -4,4 +4,5 @@ import '../js/smooth-scroll';
 import '../js/hamburger';
 import '../js/hamburger-sidebar';
 import '../js/slick';
+import '../js/map';
 
