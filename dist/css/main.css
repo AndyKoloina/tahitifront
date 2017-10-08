@@ -849,6 +849,12 @@ a.product-link:hover {
   height: 145px;
   width: 400px; }
 
+.icone-sm {
+  width: 20px; }
+
+.number-phone {
+  font-size: 25px; }
+
 .card-content {
   padding-left: 40px; }
 
@@ -867,8 +873,8 @@ a.card-link-tahiti:hover {
   text-align: center; }
 
 .card-place, .card-contact {
-  padding-top: 50px;
-  padding-bottom: 85px; }
+  padding-top: 25px;
+  padding-bottom: 40px; }
 
 .card-place {
   background-color: #52b8e9; }
