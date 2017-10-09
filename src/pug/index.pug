@@ -9,7 +9,7 @@ block vars
   - var bodyClasses = 'home';
 block page-content
   main.main-content
-      .row.section-wrapper.offre-moment
+      .row.section-wrapper.offre-moment(data-aos='fade-up' data-aos-anchor-placement='center-bottom')
         .col-12
           .container
             h1#les_offres.heading.heading-bordered.heading-bordered-30.heading-bordered-bluenavy les offres du moments
@@ -55,7 +55,7 @@ block page-content
                   
                 ]
               })
-      .row.section-wrapper.article-fb
+      .row.section-wrapper.article-fb(data-aos='fade-up' data-aos-anchor-placement='center-bottom')
         .col-12
           .container
             .row
@@ -71,9 +71,9 @@ block page-content
                   h1.heading.heading-bordered.heading-bordered-30.heading-bordered-bluenavy Facebook News
                   .artcicle-section(data-slick='{"arrows":false,"vertical":true,"slidesToShow":3,"autoplaySpeed": 2000,"infinite": true,"pauseOnHover": true}',style='display:block; width: 100%;')
                     +articlefb
-      .row.section-wrapper.map
+      .row.section-wrapper.map(data-aos='fade-up' data-aos-anchor-placement='center-bottom')
         +map
-      .row.section-wrapper.contact
+      .row.section-wrapper.contact(data-aos='fade-up' data-aos-anchor-placement='center-bottom')
         .col-12
           .container
             h1#contact.heading.heading-bordered.heading-bordered-30.heading-bordered-bluenavy Nous contacter
