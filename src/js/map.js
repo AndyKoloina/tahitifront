@@ -41,7 +41,7 @@
     } else if (href === '#Moorea') {
       $('.marker').removeClass('is-active-marker');
       $('#paopao').addClass('is-active-marker');
-      map_title.html('Papao');
+      map_title.html('Paopao');
       map_place.html('lorem ipsum dorote vvsdfssd');
     } else if (href === '#BoraBora') {
       $('.marker').removeClass('is-active-marker');
