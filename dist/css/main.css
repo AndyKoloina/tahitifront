@@ -711,6 +711,9 @@ label.css-label {
   padding: 75px 0;
   z-index: 2; }
 
+.map-header {
+  background-image: url("/img/fond/mountain.png"); }
+
 .map-carte {
   padding-left: 60px;
   padding-right: 60px;
