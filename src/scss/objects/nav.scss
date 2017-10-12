@@ -1,0 +1,10 @@
+.nav-item a {
+  font-size: 16px;
+}
+
+.nav-group {
+  //mobile
+  @media #{$m-s} {
+    display: none!important;
+  }
+}

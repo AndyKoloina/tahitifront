@@ -2,35 +2,36 @@ include nav.pug
 include ../components/slider.pug
 include ../components/card.pug
 include link
-header
+header.tahiti-section(data-section-name="header")
   #nav-icon1
     span
     span
     span
   nav#cbp-spmenu-s2.cbp-spmenu.cbp-spmenu-vertical.cbp-spmenu-right.d-flex.flex-column.justify-content-center
-    +link('#', 'acceuil')(class='is-active text-uppercase')
-    +link('#', 'tahiti phone')(class='text-uppercase')
-    +link('#', 'nos produits')(class='text-uppercase')
-    +link('#', 'nos boutiques')(class='text-uppercase')
-    +link('#', 'conatctez-nous')(class='text-uppercase')
+
+    +link('#les_offres', 'les offres')(class='text-uppercase' data-scroll-to)
+    +link('#actualites', 'actualites')(class='text-uppercase' data-scroll-to)
+    +link('#nous_trouver', 'nous trouver')(class='text-uppercase' data-scroll-to)
+    +link('#contact', 'contact')(class='text-uppercase' data-scroll-to)
   .row.bg-bluebold.header
-    .col-5.d-flex.justify-content-center
-      img(src='../img/logos.png' alt='logos')
-    .col-7
+    .col-md-5.col-sm-12.d-flex.justify-content-center
+      img.logos(src='../img/logos.png' alt='logos')
+    .col-md-7.col-sm-12.nav-group.hidden-xs-down
       +nav({classtype:'nav justify-content-center'})
   .row
-    .slick(data-slick='{"arrows":false}',style='display:block; width: 100%;')
-      .slick-item 
-        img.img-banner(src='../img/banner/fondbanner1.jpg' alt='fondbanner1')
-        .banner-description
-          h1 Galaxy S8
-          .banner-desc
-            span.text-uppercase à  
-            span découvrir chez Tahiti Phone
-          .banner-price
-            span 10 900F
-      .slick-item 
-        img.img-banner(src='../img/banner/fondbanner2.jpg' alt='fondbanner2')
+    .col-md-12.col-sm-12
+      .slick(data-slick='{"arrows":false}',style='display:block; width: 100%;')
+        .slick-item 
+          img.img-banner(src='../img/banner/fondbanner1.jpg' alt='fondbanner1')
+          .banner-description
+            h1 Galaxy S8
+            .banner-desc
+              span.text-uppercase à  
+              span découvrir chez Tahiti Phone
+            .banner-price
+              span 10 900F
+        .slick-item 
+          img.img-banner(src='../img/banner/fondbanner2.jpg' alt='fondbanner2')
         
       
      

@@ -73,6 +73,7 @@
     "imagemin-gifsicle": "^5.2.0",
     "imagemin-webpack": "^1.1.2",
     "imagemin-webpack-plugin": "^1.5.2",
+    "jquery-scrollify": "^1.0.17",
     "node-sass": "^4.5.2",
     "npm-run-all": "^4.0.1",
     "postcss-cssnext": "^3.0.2",

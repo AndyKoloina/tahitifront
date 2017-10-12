@@ -5,6 +5,7 @@
 
 .offre-moment {
   margin-bottom: 40px;
+  padding-top: 20px;
 }
 
 .offre-moment .slick-next {
@@ -20,6 +21,7 @@
   font-size: 50px;
   color: $c-bluenavy;
 }
+.offre-moment  
 
 .product-title,
 .product-price {
@@ -41,4 +43,8 @@ a.product-link:hover {
   border-bottom: 6px solid $c-yellow;
   margin-top: 30px;
   text-align: center;
+}
+
+.products-list {
+  padding-bottom: 40px;
 }

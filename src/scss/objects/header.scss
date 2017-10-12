@@ -4,6 +4,17 @@ a.nav-link {
 
 a.nav-link:hover {
   color: $c-yellow;
+
+}
+
+.logos {
+  width: 350px;
+  height: 50px;
+  //mobile
+  @media #{$m-s} {
+    width: 150px;
+    height: 25px;
+  }
 }
 
 .header {
@@ -15,11 +26,21 @@ a.nav-link:hover {
   object-fit: cover;
   width: 100%;
   height: 650px;
+
+  @media #{$m-s} {
+    height: 350px;
+  }
 }
 
 .slick-item {
   position: relative;
   height: 650px;
+}
+
+.slick {
+  @media #{$m-s} {
+    height: 350px;
+  } 
 }
 
 .banner-description {
@@ -29,14 +50,27 @@ a.nav-link:hover {
   left: 150px;
   color: #fff;
 
+  @media #{$m-s} {
+    top: 5px;
+    left: 0;
+  }
+
   > h1 {
     font-size: 75px;
+
+    @media #{$m-s} {
+      font-size: 20px;
+    }
   }
 }
 
 .banner-price {
   font-size: 50px;
   position: relative;
+
+  @media #{$m-s} {
+    font-size: 20px;
+  }
 }
 
 .banner-price span {
@@ -54,4 +88,8 @@ a.nav-link:hover {
 
 .banner-desc {
   font-size: 30px;
+
+  @media #{$m-s} {
+    font-size: 20px;
+  }
 }

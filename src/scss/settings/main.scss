@@ -8,13 +8,13 @@ $c-red: #e30513;
 $c-yellow: #ffed00;
 
 /* Fonts */
-$f-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-
+//$f-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$f-ubuntu: Ubuntu,Robot,"Helvetica Neue", Arial;
 /* Base variables */
-$main-font: $f-sans-serif;
+$main-font: $f-ubuntu !default;
 $main-font-size: 14px;
 $main-line-height: 1.5;
-$heading-font: $f-sans-serif;
+$heading-font: $f-ubuntu !default;
 $heading-line-height: 1.1;
 $main-bg: $c-white;
 $main-text-color: $c-black;
