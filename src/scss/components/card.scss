@@ -3,6 +3,10 @@
   //border-top: 8px solid $c-bluenavy;
   background-color: $c-white;
   margin-bottom: 25px;
+
+  @media #{$m-s} {
+    font-size: 12px;
+  }
 }
 
 .img-card {
@@ -40,11 +44,21 @@ a.card-link-tahiti:hover {
 
 .card-map-contact {
   text-align: center;
+
+  @media #{$m-s} {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .card-place , .card-contact {
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media #{$m-s} {
+    width: 100%;
+    padding: 10px 0;
+  }
 }
 
 .card-place {

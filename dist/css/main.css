@@ -674,8 +674,8 @@ a.nav-link:hover {
   color: #fff; }
   @media (max-width: 479px) {
     .banner-description {
-      top: 5px;
-      left: 0; } }
+      top: 40px;
+      left: 40px; } }
   .banner-description > h1 {
     font-size: 75px; }
     @media (max-width: 479px) {
@@ -709,13 +709,37 @@ a.nav-link:hover {
 .footer {
   border-top: 4px solid #52b8e9; }
   .footer__content {
-    padding: 28px 0 28px 0; }
+    padding: 28px 0;
+    display: flex;
+    flex-direction: row; }
+    @media (max-width: 479px) {
+      .footer__content {
+        flex-direction: column; } }
 
 .block-footer-right, .block-footer-left {
   height: 200px; }
+  @media (max-width: 479px) {
+    .block-footer-right, .block-footer-left {
+      height: auto; } }
+
+@media (max-width: 479px) {
+  .block-footer-left {
+    text-align: center;
+    line-height: 2; } }
 
 .block-phone {
   margin-bottom: 40px; }
+  @media (max-width: 479px) {
+    .block-phone {
+      margin-bottom: 0; } }
+
+@media (max-width: 479px) {
+  .block-social {
+    justify-content: center; } }
+
+@media (max-width: 479px) {
+  .block-suivez-nous {
+    margin-top: 10px; } }
 
 .icone-fb {
   width: 20px;
@@ -727,6 +751,27 @@ a.nav-link:hover {
 .icone-phone {
   width: 30px;
   height: 25px; }
+
+@media (max-width: 479px) {
+  .send-msg {
+    display: flex;
+    flex-direction: column; } }
+
+@media (max-width: 479px) {
+  .send-msg > button {
+    margin-top: 10px; } }
+
+.footer-logos {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end; }
+  @media (max-width: 479px) {
+    .footer-logos {
+      margin-top: 40px;
+      width: 100% !important;
+      height: 30px;
+      align-items: center !important;
+      justify-content: center !important; } }
 
 .nav-item a {
   font-size: 16px; }
@@ -809,6 +854,27 @@ label.css-label {
 .map-carte .nav-item {
   flex-grow: 1; }
 
+@media (max-width: 479px) {
+  .map-tahiti {
+    display: flex;
+    flex-direction: column-reverse; } }
+
+@media (max-width: 479px) {
+  .map-image {
+    margin-bottom: 20px; } }
+
+@media (max-width: 479px) {
+  .map-date {
+    font-size: 11px; } }
+
+@media (max-width: 479px) {
+  .map-hour {
+    font-size: 11px; } }
+
+@media (max-width: 479px) {
+  .map-place {
+    font-size: 11px; } }
+
 .map-carte .nav-item .nav-link {
   padding: 35px 100px;
   font-size: 20px;
@@ -832,6 +898,9 @@ label.css-label {
 
 .map-carte .tab-content {
   margin-top: 50px; }
+  @media (max-width: 479px) {
+    .map-carte .tab-content {
+      margin-top: 20px; } }
 
 .card-map-image {
   text-align: center; }
@@ -962,6 +1031,9 @@ a.product-link:hover {
   padding: 23px;
   background-color: #fff;
   margin-bottom: 25px; }
+  @media (max-width: 479px) {
+    .card-tahiti {
+      font-size: 12px; } }
 
 .img-card {
   object-fit: cover;
@@ -990,10 +1062,18 @@ a.card-link-tahiti:hover {
 
 .card-map-contact {
   text-align: center; }
+  @media (max-width: 479px) {
+    .card-map-contact {
+      display: flex;
+      flex-direction: row; } }
 
 .card-place, .card-contact {
   padding-top: 25px;
   padding-bottom: 40px; }
+  @media (max-width: 479px) {
+    .card-place, .card-contact {
+      width: 100%;
+      padding: 10px 0; } }
 
 .card-place {
   background-color: #52b8e9; }

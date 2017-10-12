@@ -42,11 +42,42 @@
   }
 }
 
-.map-carte  .nav-item {
+.map-carte .nav-item {
   flex-grow: 1;
 }
 
-.map-carte  .nav-item .nav-link {
+.map-tahiti {
+  @media #{$m-s} {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.map-image {
+  @media #{$m-s} {
+    margin-bottom: 20px;
+  }
+}
+
+.map-date {
+  @media #{$m-s} {
+    font-size: 11px;
+  }
+}
+
+.map-hour {
+  @media #{$m-s} {
+    font-size: 11px;
+  }
+}
+
+.map-place {
+  @media #{$m-s} {
+    font-size: 11px;
+  }
+}
+
+.map-carte .nav-item .nav-link {
   padding: 35px 100px;
   font-size: 20px;
   border: none;
@@ -72,6 +103,10 @@
 
 .map-carte .tab-content {
   margin-top: 50px;
+
+  @media #{$m-s} {
+    margin-top: 20px;
+  }
 }
 
 .card-map-image {

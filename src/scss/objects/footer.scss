@@ -1,16 +1,50 @@
 .footer {
   @include border-bluenavy-top;
+
   &__content {
-     padding: 28px 0 28px 0;
+    padding: 28px 0;
+    display: flex;
+    flex-direction: row;
+
+    @media #{$m-s} {
+      flex-direction: column;
+    }
   }
 }
 
 .block-footer-right , .block-footer-left {
   height: 200px;
+
+  @media #{$m-s} {
+    height: auto;
+  }
+}
+
+.block-footer-left {
+  @media #{$m-s} {
+    text-align: center;
+    line-height: 2;
+  }
 }
 
 .block-phone {
   margin-bottom: 40px;
+
+  @media #{$m-s} {
+    margin-bottom: 0;
+  }
+}
+
+.block-social {
+  @media #{$m-s} {
+    justify-content: center;
+  }
+}
+
+.block-suivez-nous {
+  @media #{$m-s} {
+    margin-top: 10px;
+  }
 }
 
 .icone-fb {
@@ -25,3 +59,34 @@
   width: 30px;
   height: 25px;
 }
+
+.send-msg {
+  @media #{$m-s} {
+    display: flex;
+    flex-direction: column;
+  }
+
+  > button {
+    @media #{$m-s} {
+      margin-top: 10px;
+    }
+  }
+}
+
+.footer-logos {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  @media #{$m-s} {
+    margin-top: 40px;
+    width: 100%!important;
+    height: 30px;
+    align-items: center!important;
+    justify-content: center!important;
+  }
+
+  
+}
+
+

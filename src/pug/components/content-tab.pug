@@ -4,10 +4,10 @@ include card-map-image
 mixin content-tab(options)
   - var options = options || {}
   - var type = options.type || 'tahiti' 
-  .row
-    .col-lg-4.col-sm-12
+  .row.map-tahiti
+    .col-sm-4.col-sm-pull-6.map-info
       +card-map-contact
-    .col-lg-8.col-sm-12.d-flex.align-items-center.justify-content-center
+    .col-sm-8.col-sm-push-6.d-flex.align-items-center.justify-content-center.map-image
       +card-map-image({
         type: type
       })
