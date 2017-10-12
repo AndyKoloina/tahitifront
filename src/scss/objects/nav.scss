@@ -8,3 +8,9 @@
     display: none!important;
   }
 }
+
+.nav {
+  @media #{$m-s} {
+    flex-wrap: wrap!important;
+  }
+}

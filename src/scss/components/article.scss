@@ -2,6 +2,14 @@
   position: relative;
   margin-bottom: 40px;
   background-color: $c-lighgrey;
+
+  @media #{$m-s} {
+    margin-bottom: 0;
+  }
+}
+
+.article-section-fb {
+  margin-top: 50px;
 }
 
 .article-fb::before {
@@ -10,20 +18,37 @@
   width: 50%;
   position: absolute;
   background-color: $c-bluenavy;
+
+  @media #{$m-s} {
+    height: 43%;
+    width: 100%;
+  }
 }
 
 .article-content-left {
- padding: 75px 55px 75px 0;
- z-index: 2;
+  padding: 75px 55px 75px 0;
+  z-index: 2;
+
+  @media #{$m-s} {
+    padding: 15px 0;
+  }
 }
 
 .article-content-right {
   padding: 75px 0 75px 55px;
   z-index: 2;
+
+  @media #{$m-s} {
+    padding: 15px 0;
+  }
 }
 
 .article-desc {
   font-size: 16px;
+
+  @media #{$m-s} {
+    font-size: 12px;
+  }
 }
 
 .article-section {

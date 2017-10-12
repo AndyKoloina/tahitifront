@@ -3,9 +3,9 @@ include ../objects/select
 
 mixin contact
   .form.contact-form.row
-    .col-12
+    .col-lg-12
       .row
-        .col-6
+        .col-lg-6.col-sm-12
           +select({
               class_input: 'form-control objet',
               id_input: 'objet',
@@ -29,21 +29,21 @@ mixin contact
               
               ]
             })
-    .col-12
+    .col-lg-12
       .row
-        .col-6
+        .col-lg-6.col-sm-12
           +input({name:'nom',placeholder:'Nom',id_input:'name',class_input:'form-control name',input_type:'text'})
           +input({name:'phone',placeholder:'Téléphone*',id_input:'phone',class_input:'form-control phone',input_type:'tel'})
-        .col-6
+        .col-lg-6.col-sm-12
           +input({name:'lastname',placeholder:'Prénom',id_input:'lastname',class_input:'form-control lastname',input_type:'text'})
           +input({name:'mail',placeholder:'Email',id_input:'lastname',class_input:'form-control lastname',input_type:'email'})
-    .col-12
+    .col-lg-12
       +input({name:'message',placeholder:'Ecrivez votre message* \n500 caracteres',id_input:'message',rows:'4',class_input:'form-control message',input_type:'textarea'})
-    .col-12.info-message-content
+    .col-lg-12.info-message-content
       +input({id_input:'info-check',rows:'7',class_input:'form-form-check-input info-check css-checkbox',input_type:'checkbox'})
       label(class='css-label' for='info-check')
       span.info-message J'accepte de recevoir des informations commerciales de la part de Tahiti Phone
-    .col-12
+    .col-lg-12
       .send-msg
         .g-recaptcha(data-sitekey="la_clé_du_site")
         button#send-msg.btn.btn-info.btn-lg.btn-msg Envoyer le message

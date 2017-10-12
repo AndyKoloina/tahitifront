@@ -1,22 +1,32 @@
 .map-content {
   padding: 75px 0;
   z-index: 2;
-}
 
-.map-header {
-  background-image: url('~/img/fond/mountain.png');
+  @media #{$m-s} {
+    padding: 25px 0;
+  }
 }
 
 .map-carte {
   padding-left: 60px;
   padding-right: 60px;
   margin-top: 65px;
+
+  @media #{$m-s} {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 25px;
+  }
 }
 
 .map {
   position: relative;
   background-color: $c-bluebold;
   margin-bottom: 40px;
+
+  @media #{$m-s} {
+    margin-bottom: 15px;
+  }
 }
 
 .map:before {
@@ -26,6 +36,10 @@
   height: 375px;
   background-color: $c-bluenavy;
   z-index: 2;
+
+  @media #{$m-s} {
+   height: 165px;
+  }
 }
 
 .map-carte  .nav-item {
@@ -42,6 +56,12 @@
   background-color: #f3f3f3;
   border-bottom: 6px solid #f3f3f3;
   font-weight: bold;
+
+  @media #{$m-s} {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 12px;
+  }
 }
 
 .map-carte  .nav-item .nav-link.active {

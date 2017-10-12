@@ -529,6 +529,10 @@ input[type="submit"] {
   position: relative;
   margin-bottom: 50px;
   font-size: 38px; }
+  @media (max-width: 479px) {
+    .heading {
+      font-size: 18px;
+      margin-bottom: 30px; } }
 
 .heading-bordered::before {
   content: '';
@@ -552,6 +556,11 @@ input[type="submit"] {
   font-size: 40px;
   color: #4d4d4d;
   line-height: 1.1; }
+  @media (max-width: 479px) {
+    .subHeading {
+      font-size: 16px;
+      margin-bottom: 15px;
+      margin-top: 15px; } }
 
 /* Layout */
 .clearfix::after {
@@ -634,8 +643,8 @@ a.nav-link:hover {
   height: 50px; }
   @media (max-width: 479px) {
     .logos {
-      width: 150px;
-      height: 25px; } }
+      width: 200px;
+      height: 30px; } }
 
 .header {
   padding: 43px 0 21px 0;
@@ -726,6 +735,10 @@ a.nav-link:hover {
   .nav-group {
     display: none !important; } }
 
+@media (max-width: 479px) {
+  .nav {
+    flex-wrap: wrap !important; } }
+
 input[type=checkbox].css-checkbox {
   position: absolute;
   z-index: -1000;
@@ -760,19 +773,27 @@ label.css-label {
 .map-content {
   padding: 75px 0;
   z-index: 2; }
-
-.map-header {
-  background-image: url("/img/fond/mountain.png"); }
+  @media (max-width: 479px) {
+    .map-content {
+      padding: 25px 0; } }
 
 .map-carte {
   padding-left: 60px;
   padding-right: 60px;
   margin-top: 65px; }
+  @media (max-width: 479px) {
+    .map-carte {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-top: 25px; } }
 
 .map {
   position: relative;
   background-color: #225690;
   margin-bottom: 40px; }
+  @media (max-width: 479px) {
+    .map {
+      margin-bottom: 15px; } }
 
 .map:before {
   content: '';
@@ -781,6 +802,9 @@ label.css-label {
   height: 375px;
   background-color: #52b8e9;
   z-index: 2; }
+  @media (max-width: 479px) {
+    .map:before {
+      height: 165px; } }
 
 .map-carte .nav-item {
   flex-grow: 1; }
@@ -795,6 +819,11 @@ label.css-label {
   background-color: #f3f3f3;
   border-bottom: 6px solid #f3f3f3;
   font-weight: bold; }
+  @media (max-width: 479px) {
+    .map-carte .nav-item .nav-link {
+      padding: 10px 0;
+      text-align: center;
+      font-size: 12px; } }
 
 .map-carte .nav-item .nav-link.active {
   border-bottom: 6px solid #ffed00;
@@ -888,6 +917,12 @@ a.product-link:hover {
   position: relative;
   margin-bottom: 40px;
   background-color: #f3f3f3; }
+  @media (max-width: 479px) {
+    .article-fb {
+      margin-bottom: 0; } }
+
+.article-section-fb {
+  margin-top: 50px; }
 
 .article-fb::before {
   content: '';
@@ -895,17 +930,30 @@ a.product-link:hover {
   width: 50%;
   position: absolute;
   background-color: #52b8e9; }
+  @media (max-width: 479px) {
+    .article-fb::before {
+      height: 43%;
+      width: 100%; } }
 
 .article-content-left {
   padding: 75px 55px 75px 0;
   z-index: 2; }
+  @media (max-width: 479px) {
+    .article-content-left {
+      padding: 15px 0; } }
 
 .article-content-right {
   padding: 75px 0 75px 55px;
   z-index: 2; }
+  @media (max-width: 479px) {
+    .article-content-right {
+      padding: 15px 0; } }
 
 .article-desc {
   font-size: 16px; }
+  @media (max-width: 479px) {
+    .article-desc {
+      font-size: 12px; } }
 
 .article-section {
   border-top: 8px solid #52b8e9; }
@@ -959,9 +1007,15 @@ a.card-link-tahiti:hover {
 .contact {
   margin-bottom: 40px;
   padding-top: 20px; }
+  @media (max-width: 479px) {
+    .contact {
+      margin-bottom: 15px; } }
 
 .contact-form input.form-control {
   height: 45px; }
+  @media (max-width: 479px) {
+    .contact-form input.form-control {
+      height: 40px; } }
 
 .contact-form textarea.form-control,
 .contact-form input.form-control,
@@ -974,6 +1028,9 @@ a.card-link-tahiti:hover {
 
 .contact-form select.form-control {
   height: 45px !important; }
+  @media (max-width: 479px) {
+    .contact-form select.form-control {
+      height: 40px !important; } }
 
 .contact-form select.form-control::before {
   content: '';
@@ -995,6 +1052,9 @@ a.card-link-tahiti:hover {
 
 .info-message {
   font-size: 20px; }
+  @media (max-width: 479px) {
+    .info-message {
+      font-size: 14px; } }
 
 .info-message-content {
   margin-bottom: 10px; }
@@ -1007,16 +1067,13 @@ a.card-link-tahiti:hover {
   margin-bottom: 10px; }
 
 /* Icon 1 */
-#nav-icon1,
-#nav-icon2,
-#nav-icon3,
-#nav-icon4 {
+#nav-icon1 {
   width: 35px;
   height: 35px;
   position: relative;
   margin: 40px auto;
   transform: rotate(0deg);
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer; }
 
 #nav-icon1 {
@@ -1024,10 +1081,12 @@ a.card-link-tahiti:hover {
   right: 60px;
   top: 10px;
   z-index: 500; }
+  @media (max-width: 479px) {
+    #nav-icon1 {
+      right: 40px;
+      top: 0; } }
 
-#nav-icon1 span,
-#nav-icon3 span,
-#nav-icon4 span {
+#nav-icon1 span {
   display: block;
   position: absolute;
   height: 5px;
@@ -1091,14 +1150,26 @@ a.card-link-tahiti:hover {
   height: 100%;
   top: 0;
   z-index: 20; }
+  @media (max-width: 479px) {
+    .cbp-spmenu-vertical {
+      width: 100%; } }
 
 .cbp-spmenu-vertical a {
   margin-left: 20px;
   margin-bottom: 10px;
   padding: 1em; }
+  @media (max-width: 479px) {
+    .cbp-spmenu-vertical a {
+      width: 100%;
+      text-align: center;
+      margin-left: 0;
+      margin-bottom: 0; } }
 
 .cbp-spmenu-right {
   right: -240px; }
+  @media (max-width: 479px) {
+    .cbp-spmenu-right {
+      right: -400px; } }
 
 .cbp-spmenu-right.cbp-spmenu-open {
   right: 0px; }

@@ -1,15 +1,12 @@
 /* Icon 1 */
 
-#nav-icon1,
-#nav-icon2,
-#nav-icon3,
-#nav-icon4 {
+#nav-icon1 {
   width: 35px;
   height: 35px;
   position: relative;
   margin: 40px auto;
   transform: rotate(0deg);
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
@@ -18,11 +15,14 @@
   right: 60px;
   top: 10px;
   z-index: 500;
+
+  @media #{$m-s} {
+    right: 40px;
+    top: 0;
+  }
 }
 
-#nav-icon1 span,
-#nav-icon3 span,
-#nav-icon4 span {
+#nav-icon1 span {
   display: block;
   position: absolute;
   height: 5px;
@@ -100,6 +100,10 @@
   height: 100%;
   top: 0;
   z-index: 20;
+
+  @media #{$m-s} {
+    width: 100%;
+  }
 }
 
 .cbp-spmenu-vertical a {
@@ -107,10 +111,21 @@
   margin-left: 20px;
   margin-bottom: 10px;
   padding: 1em;
+
+  @media #{$m-s} {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
 }
 
 .cbp-spmenu-right {
   right: -240px;
+
+  @media #{$m-s} {
+    right: -400px;
+  }
 }
 
 .cbp-spmenu-right.cbp-spmenu-open {

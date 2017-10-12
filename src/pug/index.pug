@@ -9,77 +9,77 @@ block vars
   - var bodyClasses = 'home';
 block page-content
   main.main-content
-      .tahiti-section#les_offres.heading.row.secton-wrapper.offre-moment(data-section-name="les_offres")
-        .col-12.col-sm-12
-          .container
-            h1.heading.heading-bordered.heading-bordered-30.heading-bordered-bluenavy les offres du moments
-            .products-list(data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "dots": false}',style='display:block; width: 100%;')
-              +product({
-                items : [
-                  {
-                    name: 'Alcatel',
-                    src: '../img/product/product1.png',
-                    alt: 'alcatel',
-                    price: '00 000'
-                  },
-                  {
-                    name: 'Alcatel',
-                    src: '../img/product/product4.png',
-                    alt: 'alcatel',
-                    price: '00 000'
-                  },
-                  {
-                    name: 'Alcatel',
-                    src: '../img/product/product3.png',
-                    alt: 'alcatel',
-                    price: '00 000'
-                  },
-                  {
-                    name: 'Alcatel',
-                    src: '../img/product/product1.png',
-                    alt: 'alcatel',
-                    price: '00 000'
-                  },
-                  {
-                    name: 'Alcatel',
-                    src: '../img/product/product4.png',
-                    alt: 'alcatel',
-                    price: '00 000'
-                  },
-                  {
-                    name: 'Alcatel',
-                    src: '../img/product/product3.png',
-                    alt: 'alcatel',
-                    price: '00 000'
-                  }
-                  
-                ]
-              })
-      section.tahiti-section#actualites.row.section-wrapper.article-fb(data-section-name="actualites")
-        .col-12
-          .container
-            .row
-              .col.col-lg-6.col-sm-12.color-white
-                .article-content-left        
-                  h1.heading.heading-bordered.heading-bordered-30.heading-bordered-white la Ora Na !
-                  p
-                    span.subHeading  Revendeur de téléphonie mobile a Tahiti et ses iles
-                  p
-                    span.article-desc At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditii iusto odio dignissimos ducimus qui blanditiis sentium voluptatum deleniti atque corrupti.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
-              .col.col-lg-6.col-sm-12
-                .article-content-right
-                  h1.heading.heading-bordered.heading-bordered-30.heading-bordered-bluenavy Facebook News
-                  .article-section(data-slick='{"arrows":false,"vertical":true,"slidesToShow":2,"autoplaySpeed": 2000,"infinite": true,"pauseOnHover": true}',style='display:block; width: 100%;')
-                    +articlefb
-      
-      +map
-      section.tahiti-section#contact.row.section-wrapper.contact(data-section-name="contact")
-        .col-12
-          .container
-            h1.heading.heading-bordered.heading-bordered-30.heading-bordered-bluenavy Nous contacter
-            .champ-obligatoire
-              i *champs obligatoire
-            +contact
+    .tahiti-section#les_offres.heading.row.secton-wrapper.offre-moment(data-section-name="les_offres")
+      .col-lg-12.col-sm-12
+        .container
+          h1.heading.heading-bordered.heading-bordered-30.heading-bordered-bluenavy les offres du moments
+          .products-list(data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "dots": false}',style='display:block; width: 100%;')
+            +product({
+              items : [
+                {
+                  name: 'Alcatel',
+                  src: '../img/product/product1.png',
+                  alt: 'alcatel',
+                  price: '00 000'
+                },
+                {
+                  name: 'Alcatel',
+                  src: '../img/product/product4.png',
+                  alt: 'alcatel',
+                  price: '00 000'
+                },
+                {
+                  name: 'Alcatel',
+                  src: '../img/product/product3.png',
+                  alt: 'alcatel',
+                  price: '00 000'
+                },
+                {
+                  name: 'Alcatel',
+                  src: '../img/product/product1.png',
+                  alt: 'alcatel',
+                  price: '00 000'
+                },
+                {
+                  name: 'Alcatel',
+                  src: '../img/product/product4.png',
+                  alt: 'alcatel',
+                  price: '00 000'
+                },
+                {
+                  name: 'Alcatel',
+                  src: '../img/product/product3.png',
+                  alt: 'alcatel',
+                  price: '00 000'
+                }
+                
+              ]
+            })
+    section.tahiti-section#actualites.row.section-wrapper.article-fb(data-section-name="actualites")
+      .col-lg-12
+        .container
+          .row
+            .col-lg-6.col-sm-12.color-white
+              .article-content-left        
+                h1.heading.heading-bordered.heading-bordered-30.heading-bordered-white la Ora Na !
+                p
+                  span.subHeading  Revendeur de téléphonie mobile a Tahiti et ses iles
+                p
+                  span.article-desc At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditii iusto odio dignissimos ducimus qui blanditiis sentium voluptatum deleniti atque corrupti.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
+            .col-lg-6.col-sm-12.article-section-fb
+              .article-content-right
+                h1.heading.heading-bordered.heading-bordered-30.heading-bordered-bluenavy Facebook News
+                .article-section(data-slick='{"arrows":false,"vertical":true,"slidesToShow":2,"autoplaySpeed": 2000,"infinite": true,"pauseOnHover": true}',style='display:block; width: 100%;')
+                  +articlefb
+    
+    +map
+    section.tahiti-section#contact.row.section-wrapper.contact(data-section-name="contact")
+      .col-lg-12
+        .container
+          h1.heading.heading-bordered.heading-bordered-30.heading-bordered-bluenavy Nous contacter
+          .champ-obligatoire
+            i *champs obligatoire
+          +contact
            
 
         
