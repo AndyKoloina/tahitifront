@@ -1,3 +1,4 @@
+//include ../components/modal
 footer.footer.bg-bluebold.tahiti-section(data-section-name='footer')
   .container
     .row
@@ -28,32 +29,35 @@ footer.footer.bg-bluebold.tahiti-section(data-section-name='footer')
       .col-lg-6.col-md-12.col-sm-12.footer-logos
         img.img-footer(src='../img/logos.png' alt='logos')
 
-div(class='modal modal-tahiti fade' id='exampleModal' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
-  div.modal-dialog.modal-lg(role='product')
-    div.modal-content.modal-content-tahiti
-      div.modal-header
-        button.close(type='button' data-dismiss='modal' aria-label='Close')
-          span(aria-hidden='true') &times;    
-      div.modal-body 
-        .modal-product-content.d-flex
-          .modal-image
-            img(src='../img/product/product1.png')
-          .modal-desc-content
+.modal.fade#exampleModal(tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true")
+  .modal-dialog(role="document")
+    .modal-content.modal-content-tahiti
+      .modal-header
+        h5.modal-title#exampleModalLongTitle Product
+        button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+          span(aria-hidden="true") &times;
+      .modal-body
+        .row 
+          .col-lg-3.modal-img
+            img.img-modal(src='../img/product/product1.png')
+          .col-lg-8
             .modal-title.color-bluebold
               strong.title-product-strong Alcatel
               span  Idol 25
             .modal-desc
               span 
-               | lorem ipsum dorete ipusm morata luuqum fatat ti elapse yurum deterum anore 
-               | lorem ipsum dorete ipusm morata luuqum fatat ti elapse yurum deterum anore 
-               | lorem ipsum dorete ipusm morata luuqum fatat ti elapse yurum deterum anore 
-               | lorem ipsum dorete ipusm morata luuqum fatat ti elapse yurum deterum anore 
+                | lorem ipsum dorete ipusm morata luuqum fatat ti elapse yurum deterum anore 
+                | lorem ipsum dorete ipusm morata luuqum fatat ti elapse yurum deterum anore 
+                | lorem ipsum dorete ipusm morata luuqum fatat ti elapse yurum deterum anore 
+                | lorem ipsum dorete ipusm morata luuqum fatat ti elapse yurum deterum anore 
             .modal-price.d-flex.flex-column.align-items-end
               .price-product
                 strong 00 000
                 span  TTC
-              a.link-product(href='#') En savoir plus
-      
+                a.link-product(href='#')
+      .modal-footer
+        button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
+        button(type="button" class="btn btn-primary") Save changes
 
-script(src="https://www.google.com/recaptcha/api.js" async defer)
+
 

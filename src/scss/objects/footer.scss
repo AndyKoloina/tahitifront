@@ -114,3 +114,13 @@ footer {
     width: 200px!important;
   }
 }
+
+.modal-img {
+  @media #{$m-l} {
+    text-align: center;
+  }
+
+  @media #{$m-s} {
+    text-align: center;
+  } 
+}
