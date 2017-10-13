@@ -1034,7 +1034,33 @@ a.link-product:hover {
 
 .offre-moment {
   margin-bottom: 40px;
-  padding-top: 20px; }
+  padding-top: 20px;
+  position: relative; }
+
+.flower-1-offre {
+  position: absolute;
+  width: 500px;
+  transform: rotate(105deg); }
+  @media (max-width: 1920px) {
+    .flower-1-offre {
+      right: -425px; } }
+  @media (min-width: 1920px) {
+    .flower-1-offre {
+      right: -900px; } }
+
+.flower-2-offre {
+  position: absolute;
+  width: 500px;
+  left: -400px;
+  transform: rotate(255deg); }
+  @media (max-width: 1920px) {
+    .flower-2-offre {
+      top: -100px;
+      left: -525px; } }
+  @media (min-width: 1920px) {
+    .flower-2-offre {
+      top: -400px;
+      left: -900px; } }
 
 .offre-moment .slick-next {
   right: 0 !important;
@@ -1077,6 +1103,31 @@ a.product-link:hover {
   @media (min-width: 1920px) {
     .article-fb {
       margin-bottom: 100px; } }
+
+.flower-1-article {
+  position: absolute;
+  transform: rotate(175deg);
+  width: 500px; }
+  @media (max-width: 1920px) {
+    .flower-1-article {
+      left: -400px; } }
+  @media (min-width: 1920px) {
+    .flower-1-article {
+      left: -500px; } }
+
+.flower-2-article {
+  position: absolute;
+  transform: rotate(320deg);
+  right: 0;
+  width: 500px; }
+  @media (max-width: 1920px) {
+    .flower-2-article {
+      right: -400px;
+      top: 150px; } }
+  @media (min-width: 1920px) {
+    .flower-2-article {
+      top: 200px;
+      right: -500px; } }
 
 @media (max-width: 479px) {
   .article-section-fb {

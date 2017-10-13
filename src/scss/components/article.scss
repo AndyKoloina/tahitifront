@@ -12,6 +12,38 @@
   }
 }
 
+.flower-1-article {
+  position: absolute;
+  transform: rotate(175deg);
+  
+  width: 500px;
+
+  @media #{$m-xxl} {
+    left: -400px;
+  }
+
+  @media #{$m-3xl} {
+    left: -500px;
+  }
+}
+
+.flower-2-article {
+  position: absolute;
+  transform: rotate(320deg);
+  right: 0;
+  width: 500px;
+
+  @media #{$m-xxl} {
+    right: -400px;
+    top: 150px;
+  }
+
+  @media #{$m-3xl} {
+    top: 200px;
+    right: -500px;
+  }
+}
+
 .article-section-fb {
   @media #{$m-s} {
     padding: 15px;

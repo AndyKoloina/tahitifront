@@ -6,6 +6,38 @@
 .offre-moment {
   margin-bottom: 40px;
   padding-top: 20px;
+  position: relative;
+}
+
+.flower-1-offre {
+  position: absolute;
+  width: 500px; 
+  transform: rotate(105deg);
+
+  @media #{$m-xxl} {
+    right: -425px;
+  }
+
+  @media #{$m-3xl} {
+    right: -900px;
+  }
+}
+
+.flower-2-offre {
+  position: absolute;
+  width: 500px;
+  left: -400px;
+  transform: rotate(255deg);
+  
+  @media #{$m-xxl} {
+    top: -100px;
+    left: -525px;
+  }
+
+  @media #{$m-3xl} {
+    top: -400px;
+    left: -900px;
+  }
 }
 
 .offre-moment .slick-next {
