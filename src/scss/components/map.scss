@@ -15,7 +15,11 @@
   @media #{$m-s} {
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 25px;
+    margin-top: 25px!important;
+  }
+
+  @media #{$m-l} {
+    margin-top: 45px;
   }
 }
 
@@ -36,9 +40,13 @@
   position: absolute;
   top: 70px;
   z-index: 3;
+
+  @media #{$m-from-l} {
+    display: none;
+  }
 }
 
-.map:before {
+.map::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -58,6 +66,11 @@
 
 .map-tahiti {
   @media #{$m-s} {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @media #{$m-l} {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -99,9 +112,15 @@
   font-weight: bold;
 
   @media #{$m-s} {
-    padding: 10px 0;
+    padding: 10px 0!important;
     text-align: center;
-    font-size: 12px;
+    font-size: 12px!important;
+  }
+
+  @media #{$m-l} {
+    padding: 20px 15px;
+    text-align: center;
+    font-size: 14px;
   }
 }
 

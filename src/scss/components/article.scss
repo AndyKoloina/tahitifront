@@ -9,7 +9,7 @@
 }
 
 .article-section-fb {
-  margin-top: 50px;
+  //margin-top: 50px;
 }
 
 .article-fb::before {
@@ -23,26 +23,45 @@
     height: 43%;
     width: 100%;
   }
+
+  @media #{$m-l} {
+    width: 100%;
+    background-color: transparent;
+  }
+  
 }
 
 .article-content-left {
-  padding: 75px 55px 75px 0;
+  padding: 75px 55px 75px 75px;
   z-index: 2;
 
   @media #{$m-s} {
-    padding: 15px 0;
+    padding: 15px 0!important;
+  }
+
+  @media #{$m-l} {
+    padding: 50px;
   }
 }
 
 .article-content-right {
-  padding: 75px 0 75px 55px;
+  padding: 75px 75px 75px 55px;
   z-index: 2;
 
   @media #{$m-s} {
-    padding: 15px 0;
+    padding: 15px 0!important;
+  }
+
+  @media #{$m-l} {
+    padding: 50px;
   }
 }
 
+.article-section-info {
+  @media #{$m-l} {
+    background-color: $c-bluenavy;
+  }
+}
 .article-desc {
   font-size: 16px;
 

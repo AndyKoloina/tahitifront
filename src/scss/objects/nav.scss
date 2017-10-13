@@ -7,6 +7,9 @@
   @media #{$m-s} {
     display: none!important;
   }
+  @media #{$m-l} {
+    display: none!important;
+  }
 }
 
 .nav {
