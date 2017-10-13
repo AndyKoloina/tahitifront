@@ -6,6 +6,10 @@
   @media #{$m-s} {
     margin-bottom: 0;
   }
+
+  @media #{$m-3xl} {
+     margin-bottom: 100px;
+  }
 }
 
 .article-section-fb {

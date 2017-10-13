@@ -27,8 +27,13 @@
   position: relative;
   background-color: $c-bluebold;
   margin-bottom: 40px;
+
   @media #{$m-s} {
     margin-bottom: 15px;
+  }
+
+  @media #{$m-3xl} {
+    margin-bottom: 100px;
   }
 }
 

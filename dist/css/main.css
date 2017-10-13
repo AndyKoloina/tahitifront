@@ -661,7 +661,7 @@ a.nav-link:hover {
   @media (max-width: 859px) {
     .img-banner {
       height: 500px; } }
-  @media (min-width: 1921px) {
+  @media (min-width: 1920px) {
     .img-banner {
       height: 850px; } }
 
@@ -674,7 +674,7 @@ a.nav-link:hover {
   @media (max-width: 859px) {
     .slick-item {
       height: 500px; } }
-  @media (min-width: 1921px) {
+  @media (min-width: 1920px) {
     .slick-item {
       height: 850px; } }
 
@@ -686,7 +686,7 @@ a.nav-link:hover {
   @media (max-width: 859px) {
     .slick {
       height: 500px; } }
-  @media (min-width: 1921px) {
+  @media (min-width: 1920px) {
     .slick {
       height: 850px !important; } }
 
@@ -891,6 +891,9 @@ label.css-label {
   @media (max-width: 479px) {
     .map {
       margin-bottom: 15px; } }
+  @media (min-width: 1920px) {
+    .map {
+      margin-bottom: 100px; } }
 
 .section-map {
   position: relative; }
@@ -1071,6 +1074,9 @@ a.product-link:hover {
   @media (max-width: 479px) {
     .article-fb {
       margin-bottom: 0; } }
+  @media (min-width: 1920px) {
+    .article-fb {
+      margin-bottom: 100px; } }
 
 @media (max-width: 479px) {
   .article-section-fb {
@@ -1187,10 +1193,39 @@ a.card-link-tahiti:hover {
 
 .contact {
   margin-bottom: 40px;
-  padding-top: 20px; }
+  padding-top: 20px;
+  position: relative; }
   @media (max-width: 479px) {
     .contact {
       margin-bottom: 15px; } }
+
+.flower-1 {
+  position: absolute; }
+  @media (max-width: 1920px) {
+    .flower-1 {
+      width: 500px;
+      right: -205px;
+      transform: rotate(125deg); } }
+  @media (min-width: 1920px) {
+    .flower-1 {
+      width: 500px;
+      right: -405px;
+      transform: rotate(125deg); } }
+
+.flower-2 {
+  position: absolute; }
+  @media (max-width: 1920px) {
+    .flower-2 {
+      width: 500px;
+      top: -120px;
+      left: -405px;
+      transform: rotate(250deg); } }
+  @media (min-width: 1920px) {
+    .flower-2 {
+      width: 500px;
+      top: -130px;
+      left: -405px;
+      transform: rotate(250deg); } }
 
 .contact-form input.form-control {
   height: 45px; }

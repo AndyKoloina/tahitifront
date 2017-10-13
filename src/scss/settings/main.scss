@@ -24,7 +24,7 @@ $default-transition-time: 0.3s;
 $default-transition: all $default-transition-time ease;
 
 /* Media variables */
-$m-3xl: screen and (min-width: 1921px);
+$m-3xl: screen and (min-width: 1920px);
 $m-to-xxl: screen and (max-width: 1920px);
 $m-from-xxl: screen and (min-width: 1280px);
 $m-xxl: screen and (min-width: 1280px) and (max-width: 1920px);

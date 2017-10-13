@@ -1,9 +1,44 @@
 .contact {
   margin-bottom: 40px;
   padding-top: 20px;
+  position: relative;
 
   @media #{$m-s} {
     margin-bottom: 15px;
+  }
+}
+
+.flower-1 {
+  position: absolute;
+
+  @media #{$m-xxl} {
+    width: 500px;
+    right: -205px;
+    transform: rotate(125deg);
+  }
+
+  @media #{$m-3xl} {
+    width: 500px;
+    right: -405px;
+    transform: rotate(125deg);
+  }
+}
+
+.flower-2 {
+  position: absolute;
+  
+  @media #{$m-xxl} {
+    width: 500px;
+    top: -120px;
+    left: -405px;
+    transform: rotate(250deg);
+  }
+
+  @media #{$m-3xl} {
+    width: 500px;
+    top: -130px;
+    left: -405px;
+    transform: rotate(250deg);
   }
 }
 
