@@ -651,23 +651,47 @@ a.nav-link:hover {
   border-top: 4px solid #52b8e9; }
 
 .img-banner {
+  position: absolute;
   object-fit: cover;
   width: 100%;
-  height: 650px; }
+  height: 750px; }
   @media (max-width: 479px) {
     .img-banner {
-      height: 350px; } }
+      height: 350px !important; } }
+  @media (max-width: 859px) {
+    .img-banner {
+      height: 500px; } }
+  @media (min-width: 1921px) {
+    .img-banner {
+      height: 850px; } }
 
 .slick-item {
   position: relative;
-  height: 650px; }
+  height: 750px; }
+  @media (max-width: 479px) {
+    .slick-item {
+      height: 350px !important; } }
+  @media (max-width: 859px) {
+    .slick-item {
+      height: 500px; } }
+  @media (min-width: 1921px) {
+    .slick-item {
+      height: 850px; } }
 
-@media (max-width: 479px) {
-  .slick {
-    height: 350px; } }
+.slick {
+  height: 750px; }
+  @media (max-width: 479px) {
+    .slick {
+      height: 350px !important; } }
+  @media (max-width: 859px) {
+    .slick {
+      height: 500px; } }
+  @media (min-width: 1921px) {
+    .slick {
+      height: 850px !important; } }
 
 .banner-description {
-  position: absolute;
+  position: relative;
   z-index: 10;
   top: 200px;
   left: 150px;
@@ -873,7 +897,7 @@ label.css-label {
 
 .bg-trouver {
   position: absolute;
-  top: 70px;
+  top: 60px;
   z-index: 3; }
   @media (max-width: 479px) {
     .bg-trouver {
