@@ -1,7 +1,7 @@
 .map-content {
   padding: 75px 0;
-  z-index: 2;
-
+  z-index: 4;
+  //opacity: 0.75;
   @media #{$m-s} {
     padding: 25px 0;
   }
@@ -23,10 +23,19 @@
   position: relative;
   background-color: $c-bluebold;
   margin-bottom: 40px;
-
   @media #{$m-s} {
     margin-bottom: 15px;
   }
+}
+
+.section-map {
+  position: relative;
+}
+
+.bg-trouver {
+  position: absolute;
+  top: 70px;
+  z-index: 3;
 }
 
 .map:before {
@@ -36,6 +45,7 @@
   height: 375px;
   background-color: $c-bluenavy;
   z-index: 2;
+  opacity: 0.75;
 
   @media #{$m-s} {
    height: 165px;

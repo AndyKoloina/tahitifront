@@ -3,7 +3,7 @@
   margin-bottom: 50px;
   font-size: 38px;
 
-  @media #{$m-s} {
+  @media #{$m-to-sm} {
     font-size: 18px;
     margin-bottom: 30px;
   }
@@ -30,7 +30,7 @@
   color: #4d4d4d;
   line-height: 1.1;
 
-  @media #{$m-s} {
+  @media #{$m-to-sm} {
     font-size: 16px;
     margin-bottom: 15px;
     margin-top: 15px;
