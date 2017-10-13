@@ -706,6 +706,18 @@ a.nav-link:hover {
     .banner-desc {
       font-size: 20px; } }
 
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  @media (max-width: 479px) {
+    footer {
+      padding-top: 15px !important;
+      padding-bottom: 15px !important; } }
+  @media (max-width: 859px) {
+    footer {
+      padding-top: 20px;
+      padding-bottom: 20px; } }
+
 .footer {
   border-top: 4px solid #52b8e9; }
   .footer__content {
@@ -772,6 +784,15 @@ a.nav-link:hover {
       height: 30px;
       align-items: center !important;
       justify-content: center !important; } }
+  @media (max-width: 859px) {
+    .footer-logos {
+      margin-top: 40px;
+      align-items: center !important;
+      justify-content: center !important; } }
+
+@media (max-width: 479px) {
+  .img-footer {
+    width: 200px !important; } }
 
 .nav-item a {
   font-size: 16px; }
@@ -854,9 +875,12 @@ label.css-label {
   position: absolute;
   top: 70px;
   z-index: 3; }
-  @media (min-width: 768px) {
+  @media (max-width: 479px) {
     .bg-trouver {
-      display: none; } }
+      display: none !important; } }
+  @media (max-width: 859px) {
+    .bg-trouver {
+      display: none !important; } }
 
 .map::before {
   content: '';
@@ -885,7 +909,12 @@ label.css-label {
 
 @media (max-width: 479px) {
   .map-image {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px;
+    padding: 15px !important; } }
+
+@media (max-width: 859px) {
+  .map-image {
+    padding: 50px; } }
 
 @media (max-width: 479px) {
   .map-date {
@@ -1019,6 +1048,14 @@ a.product-link:hover {
     .article-fb {
       margin-bottom: 0; } }
 
+@media (max-width: 479px) {
+  .article-section-fb {
+    padding: 15px; } }
+
+@media (max-width: 479px) {
+  .article-section-info {
+    padding: 15px; } }
+
 .article-fb::before {
   content: '';
   height: 100%;
@@ -1039,7 +1076,7 @@ a.product-link:hover {
   z-index: 2; }
   @media (max-width: 479px) {
     .article-content-left {
-      padding: 15px 0 !important; } }
+      padding: 15px !important; } }
   @media (max-width: 859px) {
     .article-content-left {
       padding: 50px; } }
@@ -1049,7 +1086,7 @@ a.product-link:hover {
   z-index: 2; }
   @media (max-width: 479px) {
     .article-content-right {
-      padding: 15px 0 !important; } }
+      padding: 15px !important; } }
   @media (max-width: 859px) {
     .article-content-right {
       padding: 50px; } }

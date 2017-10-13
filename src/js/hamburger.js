@@ -1,9 +1,14 @@
 $(document).ready(function(){
-	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+	$('#nav-icon1').click(function(){
 		$(this).toggleClass('open');
 	});
-
-  let icon_hamburger = $('#nav-icon1').offset().top;
-  let article_fb = $('.article-fb').offset().top;
-  console.log(icon_hamburger);
+  let nav_verticale = $('.nav-verticale');
+  if(window.matchMedia("(max-width:480px)").matches) {
+    jQuery.each(nav_verticale, function (i, val) {
+      $(this).on('click', (e) => {
+        $('.cbp-spmenu').removeClass('cbp-spmenu-open');
+        $('#nav-icon1').removeClass('open');
+      })
+    });
+  }
 });

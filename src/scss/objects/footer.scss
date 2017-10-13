@@ -1,3 +1,19 @@
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media #{$m-s} {
+    padding-top: 15px!important;
+    padding-bottom: 15px!important;
+  }
+
+  @media #{$m-l} {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 .footer {
   @include border-bluenavy-top;
 
@@ -86,7 +102,15 @@
     justify-content: center!important;
   }
 
-  
+  @media #{$m-l} {
+    margin-top: 40px;
+    align-items: center!important;
+    justify-content: center!important;
+  } 
 }
 
-
+.img-footer {
+  @media #{$m-s} {
+    width: 200px!important;
+  }
+}

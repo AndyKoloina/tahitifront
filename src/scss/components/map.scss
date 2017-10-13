@@ -41,8 +41,12 @@
   top: 70px;
   z-index: 3;
 
-  @media #{$m-from-l} {
-    display: none;
+  @media #{$m-s} {
+    display: none!important;
+  }
+
+  @media #{$m-l} {
+    display: none!important;
   }
 }
 
@@ -79,6 +83,11 @@
 .map-image {
   @media #{$m-s} {
     margin-bottom: 20px;
+    padding: 15px!important;
+  }
+
+  @media #{$m-l} {
+    padding: 50px;
   }
 }
 
