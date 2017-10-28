@@ -909,7 +909,8 @@ label.css-label {
 .bg-trouver {
   position: absolute;
   top: 60px;
-  z-index: 3; }
+  z-index: 3;
+  width: 2500px; }
   @media (max-width: 479px) {
     .bg-trouver {
       display: none !important; } }
@@ -1038,19 +1039,27 @@ a.link-product:hover {
 
 @media (max-width: 479px) {
   .modal.show .modal-dialog {
-    width: 350px !important; } }
+    transform: translate(0%, 0%) !important;
+    width: 350px !important;
+    position: fixed; } }
 
-@media (max-width: 859px) {
+@media (max-width: 320px) {
   .modal.show .modal-dialog {
-    transform: translate(-50%, 50%) !important; } }
+    width: 300px !important; } }
 
 @media (max-width: 479px) {
   .img-modal {
-    width: 150px; } }
+    width: 150px !important; } }
 
 @media (max-width: 859px) {
   .img-modal {
     width: 225px; } }
+
+.modal.show .modal-dialog {
+  transform: translate(-50%, 0%); }
+  @media (max-width: 859px) {
+    .modal.show .modal-dialog {
+      width: 350px !important; } }
 
 .img-product-size {
   height: 325px;
@@ -1129,7 +1138,7 @@ a.product-link:hover {
       margin-bottom: 100px; } }
 
 .flower-1-article {
-  position: absolute;
+  position: fixed;
   transform: rotate(175deg);
   width: 500px; }
   @media (max-width: 1920px) {
@@ -1140,7 +1149,7 @@ a.product-link:hover {
       left: -500px; } }
 
 .flower-2-article {
-  position: absolute;
+  position: fixed;
   transform: rotate(320deg);
   right: 0;
   width: 500px; }

@@ -31,21 +31,30 @@ a.link-product:hover {
 
 .modal.show .modal-dialog {
   @media #{$m-s} {
-    //transform: translate(-50%,50%)!important;
+    transform: translate(0%,0%)!important;
     width: 350px!important;
+    position: fixed;
   }
-
-  @media #{$m-l} {
-    transform: translate(-50%,50%)!important;
+  @media #{ $m-xs} {
+    width: 300px!important;
   }
+ 
 }
 
 .img-modal {
   @media #{$m-s} {
-    width: 150px;
+    width: 150px!important;
   }
 
   @media #{$m-l} {
     width: 225px;
+  }
+}
+
+ .modal.show .modal-dialog {
+   transform: translate(-50%,0%);
+  @media #{$m-l} {
+     width: 350px!important;
+     
   }
 }

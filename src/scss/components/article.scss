@@ -13,9 +13,9 @@
 }
 
 .flower-1-article {
-  position: absolute;
+  position: fixed;
   transform: rotate(175deg);
-  
+ 
   width: 500px;
 
   @media #{$m-xxl} {
@@ -28,7 +28,7 @@
 }
 
 .flower-2-article {
-  position: absolute;
+  position: fixed;
   transform: rotate(320deg);
   right: 0;
   width: 500px;

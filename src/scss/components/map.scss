@@ -45,7 +45,7 @@
   position: absolute;
   top: 60px;
   z-index: 3;
-
+  width: 2500px;
   @media #{$m-s} {
     display: none!important;
   }
