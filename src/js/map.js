@@ -4,38 +4,58 @@
   let nav_link = $('.nav-link');
   let map_title = $('.map-title');
   let map_place = $('.map-place');
-
+  initMarkerTahiti();
   jQuery.each(marker, function (i, val) {
     $(this).on('click', (e) => {
       let place = $(this).attr('id');
+      
       displaydata(place);
       e.preventDefault();
+      console.log(place);
+      changeMarkerBig(place);
       $('.marker').removeClass('is-active-marker');
       $(this).addClass('is-active-marker')
     })
   });
  
-  /*jQuery.each(nav_link, function (i, val) {
-    let active = $(this).hasClass('active') ? true : false;
-      
-      /*let href = $(this).attr('href');
-      alert(href);
-      initmarker(href);
-       
-  });*/
   $('.nav-tabs > li > a').on("click",function(e){
       e.preventDefault();
       let href = $(this).attr('href');
-     
-
       initmarker(href);
   });
 
+  function changeMarkerBig(marker) {
+    if(marker === 'Prince-hinoi') {
+      $('#p_hinoi-big').addClass('is-active-marker marker-big');
+      $('#Prince-hinoi').addClass('marker-none');
+      $('#face-tony-big').removeClass('marker-big');
+      $('#Facebook_Places').addClass('marker-big');
+    } else if(marker ==='Facebook_Places') {
+      $('#Facebook_Places').addClass('marker-none');
+      $('#face-tony-big').addClass('marker-big');
+      $('.marker-big').removeClass('is-active-marker');
+      $('#p_hinoi-big').removeClass('marker-big');
+      //$('#Prince-hinoi').css('display','block!important');
+      //$('.marker-big').addClass('is-active-marker');
+      //$('.marker-big').removeClass('is-active-marker');
+      //$('#p_hinoi-big').removeClass('marker-big');
+     // $('#Prince-hinoi').addClass('marker-big');   
+      //$('#p_hinoi-big').removeClass('marker-big');
+      
+    }
+  }
+
+  function initMarkerTahiti() {
+    $('.marker').removeClass('is-active-marker');
+    $('#Facebook_Places').css('display','none');
+    $('#face-tony-big').addClass('is-active-marker marker-big');
+  }
   function initmarker(href) {
 
     if(href === '#Tahiti') {
       $('.marker').removeClass('is-active-marker');
-      $('#Facebook_Places').addClass('is-active-marker');
+      $('#Facebook_Places').css('display','none');
+      $('#face-tony-big').addClass('is-active-marker marker-big');
       map_title.html('Face tony');
       map_place.html('Face au McDonald de Papeete');
     } else if (href === '#Moorea') {

@@ -164,10 +164,33 @@
 #paopao:hover,
 #carrefour:hover,
 #Prince-hinoi:hover,
-#uturoa:hover {
+#uturoa:hover,
+#p_hinoi-big:hover, 
+#face-tony-big:hover, 
+#carrefour-big:hover {
   cursor: pointer;
 }
 
 .is-active-marker {
-  fill: #52b8e9;
+  fill: #52b8e9!important;
+}
+
+#face-tony-big {
+  display: none;
+}
+
+#carrefour-big {
+  display: none;
+}
+
+#p_hinoi-big {
+  display: none;
+}
+
+.marker-big {
+  display: block!important;
+}
+
+.marker-none {
+  display: none!important;
 }
